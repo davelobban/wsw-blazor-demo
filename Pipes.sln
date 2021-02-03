@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ui", "Ui\Ui.csproj", "{825E50C8-3D92-46F3-B9F2-1FB04FDBCA3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ui", "Ui\Ui.csproj", "{825E50C8-3D92-46F3-B9F2-1FB04FDBCA3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{1730C9E4-D04B-4FA0-934A-3EB0F78D3857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{1730C9E4-D04B-4FA0-934A-3EB0F78D3857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ui.Tests", "Ui.Tests\Ui.Tests.csproj", "{5CBBB591-25FB-449C-828E-F030CD9B147B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ui.Tests", "Ui.Tests\Ui.Tests.csproj", "{5CBBB591-25FB-449C-828E-F030CD9B147B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{825E50C8-3D92-46F3-B9F2-1FB04FDBCA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +55,11 @@ Global
 		{5CBBB591-25FB-449C-828E-F030CD9B147B}.Release|x64.Build.0 = Release|Any CPU
 		{5CBBB591-25FB-449C-828E-F030CD9B147B}.Release|x86.ActiveCfg = Release|Any CPU
 		{5CBBB591-25FB-449C-828E-F030CD9B147B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F1B8C12-1CAD-444B-A047-B4E034C4AC84}
 	EndGlobalSection
 EndGlobal
