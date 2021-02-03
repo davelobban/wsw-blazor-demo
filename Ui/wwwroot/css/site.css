@@ -1,7 +1,23 @@
+:root {
+    --main-font: Georgia, Verdana, sans-serif;
+    --fore-colour: #1861ac;
+    --back-colour: #f0f8ff;
+    --btn-primary-fore-colour: #fff;
+    --btn-primary-back-colour: #1b6ec2;
+}
+
+
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var( --main-font, serif);
+    color: var(--fore-colour, pink);
+    background-color: var(--back-colour);
+}
+
+.dark {
+    background-color: var(--fore-colour, pink);
+    color: var(--back-colour);
 }
 
 a, .btn-link {
@@ -9,9 +25,15 @@ a, .btn-link {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
+    color: var(--btn-primary-fore-colour);
+    background-color: var(--btn-primary-back-colour);
     border-color: #1861ac;
+}
+
+.dark .btn-primary {
+    color: var(--btn-primary-back-colour);
+    background-color: var(--btn-primary-fore-colour);
+    border-color: #e79e53;
 }
 
 .content {
@@ -42,9 +64,9 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}

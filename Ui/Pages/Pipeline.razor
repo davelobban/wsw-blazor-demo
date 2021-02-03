@@ -1,0 +1,41 @@
+﻿<h3>Pipeline Designer</h3>
+
+<div id="pipeline-name-div">
+    <h6 id="pipeline-name">Name: @Name</h6>
+
+    <button @onclick="@EditName">EditName</button>
+</div>
+<div id="name-editing" hidden="@NameEditHidden">
+    <input id="pipeline-name-edit" @bind="_proposedName" type="text" />
+    <button id="pipeline-name-edit-apply" @onclick="@EditNameSave">Apply</button>
+    <button id="pipeline-name-edit-cancel" @onclick="@EditNameCancel">Cancel</button>
+</div>
+
+@code {
+    string _proposedName=null;
+    string Name { get; set; } = "NewPipeline1";
+    bool NameEditHidden = true;
+
+    private void EditName()
+    {
+        _proposedName = Name;
+        NameEditHidden = false;
+    }
+
+    private void EditNameCancel()
+    {
+        NameEditHidden = true;
+    }
+
+    private void NameChanged(string value)
+    {
+        _proposedName = value;
+    }
+
+    private void EditNameSave()
+    {
+        Name = _proposedName;
+        NameEditHidden = true;
+    }
+
+}

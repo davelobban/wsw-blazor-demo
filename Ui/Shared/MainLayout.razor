@@ -5,8 +5,10 @@
         <NavMenu />
     </div>
 
-    <div class="main">
+    <div class="main @DarkClass">
         <div class="top-row px-4">
+            <MatSlideToggle @bind-Value="@DarkMode"></MatSlideToggle>
+            <span>Dark Mode</span>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 
@@ -15,3 +17,9 @@
         </div>
     </div>
 </div>
+
+@code
+{
+    bool DarkMode = false;
+    string DarkClass => DarkMode ? "dark" : "";
+}
